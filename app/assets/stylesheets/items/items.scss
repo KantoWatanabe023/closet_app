@@ -1,0 +1,22 @@
+// Place all the styles related to the items controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.item-lists{
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+
+}
+.list{
+  width: 37vh;
+  padding: 1vw;
+  background-color: #FFF;
+}
+
+.item-img{
+  width: 33vh;
+  height: 33vh;
+}

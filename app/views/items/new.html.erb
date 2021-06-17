@@ -1,0 +1,21 @@
+<%= render "shared/header" %>
+
+
+<h2>服の情報を入力</h2>
+<%= form_with model:@item, local: true do |f| %>
+  服画像
+  <%= f.file_field :image %>
+  服の種類
+  <%= f.collection_select(:item_type_id, ItemType.all, :id, :name, {}) %> 
+  季節
+  <%= f.collection_select(:season_id, Season.all, :id, :name, {}) %> 
+  色
+  <%= f.collection_select(:color_id,Color.all, :id, :name, {}) %> 
+  購入日
+  <%= f.date_field :buy_day %>
+  値段
+  <%= f.text_field :price  %>円
+  <%= f.submit "登録する" %>
+<% end %>
+
+<%= link_to 'トップページへ戻る', root_path %></li>

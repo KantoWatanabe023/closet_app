@@ -1,0 +1,14 @@
+.header{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  list-style: none;
+  background-color: blanchedalmond;
+}
+.closet-icon{
+  width:50px;
+  height:50px;
+}
+.closet-new{
+  padding:30px;
+}
