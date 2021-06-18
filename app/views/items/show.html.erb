@@ -1,0 +1,40 @@
+<h1>詳細ページ</h1>
+<%= link_to 'トップページへ戻る', root_path %></li>
+
+  <%= image_tag @item.image,class:"item-show-img" %>
+  <%= link_to "編集する",edit_item_path %>
+  <%= link_to "削除する",item_path, method: :delete %>
+
+
+  <table>
+    <tbody>
+      <tr>
+        <%# 見出し %>
+        <th>服の種類</th>
+        <%# 内容 %>
+        <td><%= @item.item_type.name %></td>
+      </tr>
+      <tr>
+        <th>季節</th>
+        <td><%= @item.season.name %></td>
+      </tr>
+      <tr>
+        <th>色</th>
+        <td><%= @item.color.name %></td>
+      </tr>
+      <tr>
+        <th>購入日</th>
+        <td><%= @item.buy_day %></td>
+      </tr>
+      <tr>
+        <th>値段</th>
+        <td><%= @item.price %></td>
+      </tr>
+      <tr>
+        <th>メモ</th>
+        <td><%= @item.memo %></td>
+      </tr>
+
+
+    </tbody>
+  </table>

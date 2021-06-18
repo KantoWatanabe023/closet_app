@@ -1,7 +1,6 @@
-<%= render "shared/header" %>
+<h1>編集ページ</h1>
 
-
-<h2>服の情報を入力</h2>
+<h2>服の情報を編集</h2>
 <%= form_with model:@item, local: true do |f| %>
   服画像
   <%= f.file_field :image %>
@@ -16,7 +15,7 @@
   値段
   <%= f.number_field :price,min:0, step:1000 %>円
   <%= f.text_area :memo, size:"30x5" %>
-  <%= f.submit "登録する" %>
-<% end %>
+  <%= f.submit "変更する" %>
 
-<%= link_to 'トップページへ戻る', root_path %></li>
+  <%= link_to 'トップページへ戻る', root_path %></li>
+<% end %>
