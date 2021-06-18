@@ -20,19 +20,15 @@
 
 # DB設計			
 
-## users テーブル
-| Column                | Type   | Options                   |
-| --------------------- | ------ | ------------              |
-| nickname              | string | null: false               |
-| email                 | string | null: false, unique: true |
-| encrypted_password    | string | null: false               |
 
 ## items テーブル
 | Column       | Type       | Options           |
 | ------------ | ---------- | ----------------- |
-| buy_day_id   | integer    | null: false       |
 | item_type_id | integer    | null: false       |
 | season_id    | integer    | null: false       |
-| price        | integer    | null: false       |
-| user         | references | foreign_key: true |
+| color_id     | integer    | null: false       |
+| size_id      | integer    | null: false       |
+| buy_day      | date       | null: false       |
+| price        | integer    |                   |
+| memo         | text       |                   |
 

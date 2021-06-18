@@ -1,0 +1,14 @@
+<%= render "shared/header" %>
+
+<ul class='item-lists'>
+
+  <% @item.each do |item| %>
+  <li class = "list">
+    <%= link_to "詳細ページ" do %>
+      <%= image_tag item.image, class:"item-img" %>
+    <% end %>
+    </li>
+  <% end %>
+</ul>
+<%# <footer>
+</footer> %>
