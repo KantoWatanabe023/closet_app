@@ -3,12 +3,37 @@
   justify-content: space-between;
   align-items:center;
   list-style: none;
-  background-color: blanchedalmond;
+  background-color: #88d3ff;
+  margin: 0 auto;    
+  width: 100vw;
 }
 .closet-icon{
   width:50px;
   height:50px;
 }
+.header-title{
+  font-family: 'Corben', cursive;
+  font-size: 40px;
+}
+
+.fashion-button{
+  display: flex;
+}
+
+.category-list{
+  padding:20px;
+  background-color: #8584fd;
+  border: 1px solid #8584fd;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
 .closet-new{
-  padding:30px;
+  padding:20px;
+  background-color: #adacfc;
+  border: 1px solid #adacfc;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
 }

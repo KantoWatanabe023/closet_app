@@ -1,6 +1,12 @@
 <header>
   <ul class = "header">
-    <li><%= link_to image_tag("favicon.png",class:"closet-icon"),root_path %></li>
-    <li><%= link_to '服登録', new_item_path, class:"closet-new" %></li>
+    <li><%= link_to image_tag("fashion.jpg",class:"closet-icon"),root_path %></li>
+    <div class = "header-title">
+    closet_app
+    </div>
+    <div class ="fashion-button">
+      <li><%= link_to 'カテゴリー', search_items_path, class: "category-list" %></li>
+      <li><%= link_to '服登録', new_item_path, class:"closet-new" %></li>
+    </div>
   </ul>
 </header>

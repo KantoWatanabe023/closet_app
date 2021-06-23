@@ -1,0 +1,164 @@
+.item-new{
+  background-color: #82c3f8;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+.item-new-form{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  background-color: #fff;
+  width:40vw;
+  padding:10vh 15vw;
+  margin: 50px 0;
+
+}
+
+.item-images{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2vh 0;
+}
+
+.item-new-img{
+  font-weight: bold;
+  margin:10px 0;
+}
+
+.item-image{
+  margin: 15px 0;
+  width: 40%;
+}
+
+.item-types{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2vh 0;
+}
+
+.item-new-type{
+  font-weight: bold;
+  margin:10px 0;
+}
+
+.item-type{
+  margin: 15px 0;
+  width: 40%;
+}
+
+.item-seasons{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2vh 0;
+}
+
+.item-new-season{
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.item-season{
+  margin: 15px 0;
+  width: 40%;
+}
+
+.item-colors{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2vh 0;
+}
+
+.item-new-color{
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.item-color{
+  margin: 15px 0;
+  width: 40%;
+}
+
+.item-buy-days{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2vh 0;
+}
+
+.item-new-buy-day{
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.item-buy-day{
+  margin: 15px 0;
+  width: 40%;
+}
+
+.item-prices{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2vh 0;
+
+}
+
+.item-new-price{
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.item-price{
+  margin: 15px 0;
+  width: 40%;
+}
+
+.item-memos{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2vh 0;
+}
+
+.item-new-memo{
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.memo{
+  margin: 15px 0;
+  width: 40%;
+}
+
+.item-btns{
+  width: 100%;
+  text-align: center;
+  display:flex;
+  flex-direction:column;
+}
+
+.item-btn{
+  background: #d7ea2d;
+  border: 1px solid #d7ea2d;
+  color: #fff;
+  width: 60%;
+  height: 50px;
+  font-size: 14px;
+  margin:0 auto 4vh;
+}
+
+.back-btn{
+  background: #aaa;
+  border: 1px solid #aaa;
+  color: #fff;
+  text-decoration: none;
+  width: 40%;
+  margin: 0 auto 2vh;
+  padding: 10px 0;
+}
