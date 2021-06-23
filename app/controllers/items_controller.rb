@@ -1,7 +1,7 @@
 class ItemsController < ApplicationController
 
   before_action :set_item, only: [:show, :edit, :update, :destroy]
-
+  before_action :search_item, only: [:index, :search]
 
 
   def index
@@ -41,6 +41,10 @@ class ItemsController < ApplicationController
     redirect_to root_path
   end
 
+  def search
+    @item = Item.search(params[:keyword])
+  end
+
 
   private
 
@@ -50,5 +54,9 @@ class ItemsController < ApplicationController
 
   def set_item
     @item = Item.find(params[:id])
+  end
+
+  def search_item
+    @p = Item.ransack(params[:q])
   end
 end
