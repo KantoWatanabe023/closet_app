@@ -1,0 +1,67 @@
+.search{
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.items-search{
+  background-color: #c2eabf;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.item-show-search{
+  background-color: #FFF;
+  margin-top: 30px;
+  padding:10vh 10vw;
+  width: 70vw;
+}
+.item-type-about, .season-about, .color-about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-type-name, .season-name, .color-name{
+  font-weight: bold;
+}
+
+.select-item-type, .select-season, .select-color{
+  margin:25px;
+  width: 40%;
+}
+
+
+.price-ranges{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  margin:25px 0;
+  font-weight: bold;
+}
+
+.price-range{
+  margin:0 25px;
+}
+
+.price-range-gt{
+  width: 40%;
+}
+
+.search-submits{
+  display: flex;
+  justify-content: center;
+}
+
+.search-submit{
+  background-color: #aaa;
+  color:white;
+  border: 1px solid #aaa;
+  width: 20%;
+  margin-bottom: 40px;
+  border-bottom: solid 3px gray;
+  border-radius: 3px;
+  box-shadow: 0px 3px 5px lightgray;
+}

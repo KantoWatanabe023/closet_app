@@ -1,0 +1,24 @@
+<%= render "shared/header" %>
+
+<h1 class= "search">
+  検索結果
+</h1>
+
+<ul class='item-lists'>
+  <% if @results.length !=0 %>
+  <% @results.each do |item| %>
+    <br>
+      <li class='list'>
+        <%= link_to item_path(item) do %>
+        <div class='item-img-content'>
+          <%= image_tag item.image, class: "item-img" %>
+        <% end %>
+
+        </div>
+      <% end %>
+  <% else %>
+    該当する商品はありません
+  <% end %>
+  <br>
+  
+</ul>

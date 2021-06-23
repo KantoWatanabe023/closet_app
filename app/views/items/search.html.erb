@@ -1,3 +1,37 @@
-<h1>検索</h1>
+<%= render "shared/header" %>
 
-<%= link_to 'もどる', root_path, class: "back-btn" %>
+<div class="items-search">
+<h1 class = "search"> 検索</h1>
+<%= search_form_for @p, url: outcome_items_path do |f| %>
+  <div class = "item-show-search">
+    <div class = "item-type-about">
+      <%= f.label :item_type_id_eq, '服の種類',class:"item-type-name" %>
+      <%= f.collection_select :item_type_id_eq, ItemType.all, :id, :name , {include_blank: "---"}, {class:"select-item-type"}  %>
+    </div>
+  <br>
+    <div class = "season-about">
+      <%= f.label :season_id_eq, '季節',class:"season-name" %>
+      <%= f.collection_select :season_id_eq, Season.all, :id, :name , {include_blank: "---"}, {class:"select-season"} %>
+    </div>
+  <br>
+    <div class = "color-about">
+      <%= f.label :color_id_eq, '色',class:"color-name" %>
+      <%= f.collection_select :color_id_eq, Color.all, :id, :name , {include_blank: "---"}, {class:"select-color"} %>
+    </div>
+  <br>
+
+   <div class = price-ranges>
+     <%= f.label :price_eq, '値段', class:"price-name" %>
+     <div class = price-range>
+      <%= f.number_field :price_gteq, min:0, size:30, step:1000,class:"price-range-gt" %>円
+      <%= f.label :price_eq, ' 〜 ' %>
+      <%= f.number_field :price_lteq, max:9999999, size:30, step:1000,class:"price-range-gt" %>円
+     </div>
+   </div>
+  <br>
+    <div class = "search-submits">
+      <%= f.submit '検索', class:"search-submit" %>
+    </div>
+  </div>
+<% end %>
+</div>

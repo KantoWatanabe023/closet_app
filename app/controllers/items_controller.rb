@@ -1,7 +1,7 @@
 class ItemsController < ApplicationController
 
   before_action :set_item, only: [:show, :edit, :update, :destroy]
-  before_action :search_item, only: [:index, :search]
+  before_action :search_item, only: [:search, :outcome]
 
 
   def index
@@ -42,7 +42,11 @@ class ItemsController < ApplicationController
   end
 
   def search
-    @item = Item.search(params[:keyword])
+    @item = Item.all
+  end
+
+  def outcome
+    @results = @p.result
   end
 
 
